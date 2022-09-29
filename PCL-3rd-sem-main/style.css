@@ -1,0 +1,160 @@
+/*
+position: absolute;
+width: 486.74px;
+height: 674px;
+
+background: url(umesh-soni-OsY4KXHZwgo-unsplash.jpg);
+filter: drop-shadow(0px -109px 500px rgba(255, 238, 238, 0.0167767)) drop-shadow(0px -54.5532px 250.244px rgba(255, 238, 238, 0.0243888)) drop-shadow(0px -32.8603px 150.735px rgba(255, 238, 238, 0.0300374)) drop-shadow(0px -21.0586px 96.5991px rgba(255, 238, 238, 0.035)) drop-shadow(0px -13.6485px 62.6078px rgba(255, 238, 238, 0.0399626)) drop-shadow(0px -8.59157px 39.4109px rgba(255, 238, 238, 0.0456112)) drop-shadow(0px -4.93639px 22.644px rgba(255, 238, 238, 0.0532233)) drop-shadow(0px -2.17263px 9.96621px rgba(255, 238, 238, 0.07));
+border-radius: 243.371px;
+
+*/
+
+.Home{
+    background-image: url("local/Frame\ 5.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  height: 100vh;
+}
+
+/* body{
+    background-image: url("Frame\ 5.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans' , sans-serif;
+    /* background-image: url("Frame5.jpg"); */
+    }
+.hero{
+    height: 30vh;
+    width: 100%;
+    ;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    transform: rotate(90deg);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+}
+
+button{
+    border: none;
+    background: #220c2c;
+    padding: 10px 10px;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .5s ;
+}
+
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.taj{
+    /* align-items: center; */
+    left: 80vh;
+    position: absolute;
+width: 300px;
+height: 415.42px;
+
+background: url(umesh-soni-OsY4KXHZwgo-unsplash.jpg);
+filter: drop-shadow(0px -109px 500px rgba(255, 238, 238, 0.0167767)) drop-shadow(0px -54.5532px 250.244px rgba(255, 238, 238, 0.0243888)) drop-shadow(0px -32.8603px 150.735px rgba(255, 238, 238, 0.0300374)) drop-shadow(0px -21.0586px 96.5991px rgba(255, 238, 238, 0.035)) drop-shadow(0px -13.6485px 62.6078px rgba(255, 238, 238, 0.0399626)) drop-shadow(0px -8.59157px 39.4109px rgba(255, 238, 238, 0.0456112)) drop-shadow(0px -4.93639px 22.644px rgba(255, 238, 238, 0.0532233)) drop-shadow(0px -2.17263px 9.96621px rgba(255, 238, 238, 0.07));
+border-radius: 243.371px;
+
+}
+
+.men{
+    position: absolute;
+    width: 300px;
+    height: 415.42px;
+}
+
+.nature{
+    position: absolute;
+    left: 55vh;
+    width: 300px;
+    height: 415.42px;
+}
+
+h1{
+    font-style: italic;
+    font-size: 50px;
+    color: white;
+    padding-left: 100px;
+    height: 10vh;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.near{
+    background-image: url("local/Frame\ 6.jpg");
+    background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size:cover;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  
+}
+.circle{
+    
+    width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  background-color: #25132D;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.location{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.circle:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    filter: drop-shadow(0 0 30px #333);
+
+}
+

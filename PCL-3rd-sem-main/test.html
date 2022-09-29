@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"   href="testst.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <!-- <h2 class="logo">Meet</h2> -->
+            <img src="local/Group 2.png" class="logo" width="50" height="100%" >
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Post</a></li>
+                <li><a href="#near">Near me</a></li>
+                <li><a href="post.html">Most Reated</a></li>
+                <li><a href="test.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="button"><img src="local/magnifying-glass.png" width="30px" height="100%"></button>
+        </nav>
+        <section>
+            <img src="tutorial/1.png" data-speed="-5" class="layer">
+            <img src="tutorial/2.png" data-speed="5" class="layer">
+            <img src="tutorial/3.png" data-speed="2" class="layer">
+            <img src="tutorial/4.png" data-speed="6" class="layer">
+            <img src="tutorial/5.png" data-speed="8" class="layer">
+            <img src="tutorial/6.png" data-speed="-2" class="layer">
+            <img src="tutorial/7.png" data-speed="4" class="layer">
+            <img src="tutorial/8.png" data-speed="-9" class="layer">
+            <img src="tutorial/9.png" data-speed="6" class="layer">
+            <img src="tutorial/10.png" data-speed="-7" class="layer">
+            <img src="tutorial/11.png" data-speed="-5" class="layer">
+            <img src="tutorial/12.png" data-speed="5" class="layer">
+            <h2 class="text" data-speed="2">About Us</h2>
+        </section>
+    
+        <script type="text/javascript">
+            document.addEventListener("mousemove", parallax);
+            function parallax(e){
+                this.querySelectorAll('.layer').forEach(layer => {
+                    const speed=layer.getAttribute('data-speed')
+    
+                    const x =(window.innerWidth - e.pageX*speed)/100
+                    const y =(window.innerHeight - e.pageY*speed)/100
+    
+                    layer.style.transform = ` translateX(${x}px) translateY(${y}px)`
+                })
+            }
+        </script>
+    </div>
+    <hr color="red">
+    <!-- <div class="carousel-wrapper">
+        <span id="item-1"></span>
+        <span id="item-2"></span>
+        <span id="item-3"></span>
+        <span id="item-4"></span>
+        <div class="carousel-item item-1">
+          <a href="#item-3" class="arrow-prev arrow"></a>
+          <a href="#item-2" class="arrow-next arrow"></a>
+        </div>
+    
+        <div class="carousel-item item-2">
+          <a href="#item-1" class="arrow-prev arrow"></a>
+          <a href="#item-3" class="arrow-next arrow"></a>
+        </div>
+    
+        <div class="carousel-item item-3">
+          <a href="#item-2" class="arrow-prev arrow"></a>
+          <a href="#item-4" class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carousel-item item-4">
+            <a href="#item-3" class="arrow-prev arrow"></a>
+            <a href="#item-1" class="arrow-next arrow"></a>
+          </div> -->
+          <div class="cardbody">
+            <div class="card">
+                <div class="imgBX">
+                    <img src="local/meet-profile.jpg" alt="" srcset="">
+                </div>
+                <div class="details">
+                    <h3>Meet Nakum<br>
+                        <span>CSE General</span>
+                    </h3>
+                    <h4>PCL Project</h4>
+                    <p>I am from Jain University. Our PCL project is Advance Intelligence Tourist Guide.</p>
+                    <!-- <h4>Size</h4> -->
+                    <!-- <ul class="size">
+                        <li>36</li>
+                        <li>38</li>
+                        <li>40</li>
+                        <li>42</li>
+                        <li>44</li>
+                    </ul> -->
+                    <div class="group">
+                        <!-- <h2><sup>$</sup>199<small>.99</small></h2> -->
+                        <a href="#">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBX">
+                    <img src="local/narayan-profile.png" alt="" srcset="">
+                </div>
+                <div class="details">
+                    <h3>Narayan Panchal<br>
+                        <span>CSE General</span>
+                    </h3>
+                    <h4>PCL Project</h4>
+                    <p>I am from Jain University. Our PCL project is Advance Intelligence Tourist Guide.</p>
+                    <!-- <h4>Size</h4> -->
+                    <!-- <ul class="size">
+                        <li>36</li>
+                        <li>38</li>
+                        <li>40</li>
+                        <li>42</li>
+                        <li>44</li>
+                    </ul> -->
+                    <div class="group">
+                        <!-- <h2><sup>$</sup>199<small>.99</small></h2> -->
+                        <a href="#">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBX">
+                    <img src="local/malika-profile.png" alt="" srcset="">
+                </div>
+                <div class="details">
+                    <h3>Malika Tungidwar<br>
+                        <span>CSE General</span>
+                    </h3>
+                    <h4>PCL Project</h4>
+                    <p>I am from Jain University. Our PCL project is Advance Intelligence Tourist Guide.</p>
+                    <!-- <h4>Size</h4> -->
+                    <!-- <ul class="size">
+                        <li>36</li>
+                        <li>38</li>
+                        <li>40</li>
+                        <li>42</li>
+                        <li>44</li>
+                    </ul> -->
+                    <div class="group">
+                        <!-- <h2><sup>$</sup>199<small>.99</small></h2> -->
+                        <a href="#">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+    
+</body>
+</html>
